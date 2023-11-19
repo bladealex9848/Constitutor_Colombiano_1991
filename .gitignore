@@ -16,7 +16,7 @@ env/
 .DS_Store
 Thumbs.db
 app_full.py
-.ttf
+*.ttf
 
 # Archivos de configuración de Streamlit
 .streamlit/
