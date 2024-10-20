@@ -4,11 +4,17 @@ import openai
 import streamlit as st
 import time
 
-# Configuración de la página de Streamlit
+# Configuración de la página
 st.set_page_config(
-    page_title="Constitutor Colombiano 1991", 
-    page_icon=":scroll:",   
-    initial_sidebar_state='collapsed'  # Esto debería funcionar, pero hay un problema en algunas versiones de Streamlit
+    page_title="Constitutor Colombiano 1991",
+    page_icon=":scroll:",
+    layout="wide",
+    initial_sidebar_state="collapsed",
+    menu_items={
+        'Get Help': 'https://marduk.pro/',
+        'Report a bug': None,
+        'About': "Constitutor Colombiano 1991: Tu asistente especializado en la Constitución Política de Colombia de 1991. Estoy aquí para ayudarte a comprender y navegar por este documento fundamental de la República de Colombia."
+    }
 )
 
 # Función para verificar si el archivo secrets.toml existe
@@ -41,6 +47,12 @@ client = openai
 
 # Presentación del asistente
 st.title("¡Bienvenido al Constitutor Colombiano 1991! 📜")
+
+st.write("""
+        [![ver código fuente](https://img.shields.io/badge/Repositorio%20GitHub-gris?logo=github)](https://github.com/bladealex9848/Constitutor_Colombiano_1991)
+        ![Visitantes](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fconstitutor.streamlit.app&label=Visitantes&labelColor=%235d5d5d&countColor=%231e7ebf&style=flat)
+        """)
+
 st.write("""
 ¡Hola! Soy el Constitutor Colombiano 1991, tu asistente especializado en la Constitución Política de Colombia de 1991. Estoy aquí para ayudarte a comprender y navegar por este documento fundamental de la República de Colombia.
 
@@ -133,4 +145,4 @@ if prompt := st.chat_input("¿Cómo puedo ayudarte con la Constitución Colombia
 st.sidebar.markdown('---')
 st.sidebar.subheader('Creado por:')
 st.sidebar.markdown('Alexander Oviedo Fadul')
-st.sidebar.markdown("[GitHub](https://github.com/bladealex9848) | [Website](https://alexander.oviedo.isabellaea.com/) | [Instagram](https://www.instagram.com/alexander.oviedo.fadul) | [Twitter](https://twitter.com/alexanderofadul) | [Facebook](https://www.facebook.com/alexanderof/) | [WhatsApp](https://api.whatsapp.com/send?phone=573015930519&text=Hola%20!Quiero%20conversar%20contigo!%20)")
+st.sidebar.markdown("[GitHub](https://github.com/bladealex9848) | [Website](https://alexanderoviedofadul.dev/) | [LinkedIn](https://www.linkedin.com/in/alexander-oviedo-fadul/) | [Instagram](https://www.instagram.com/alexander.oviedo.fadul) | [Twitter](https://twitter.com/alexanderofadul) | [Facebook](https://www.facebook.com/alexanderof/) | [WhatsApp](https://api.whatsapp.com/send?phone=573015930519&text=Hola%20!Quiero%20conversar%20contigo!%20)")
