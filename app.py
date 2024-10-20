@@ -53,15 +53,20 @@ st.write("""
         ![Visitantes](https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fconstitutor.streamlit.app&label=Visitantes&labelColor=%235d5d5d&countColor=%231e7ebf&style=flat)
         """)
 
-st.write("""
-¡Hola! Soy el Constitutor Colombiano 1991, tu asistente especializado en la Constitución Política de Colombia de 1991. Estoy aquí para ayudarte a comprender y navegar por este documento fundamental de la República de Colombia.
+st.markdown("""
+### ⚖️ ¡Hola! Soy el Constitutor Colombiano 1991, tu asistente especializado en la Constitución Política de Colombia de 1991.
+Estoy aquí para ayudarte a comprender y navegar por este documento fundamental de la República de Colombia.
 
-¿Qué puedo hacer por ti? 🤔
-- Responder preguntas relacionadas con la Constitución de 1991.
-- Proporcionarte artículos o secciones específicas.
-- Explicarte conceptos y principios fundamentales.
-Y mucho más…
-¡No dudes en preguntarme cualquier cosa relacionada con la Constitución Política de Colombia de 1991!
+#### ¿Qué puedo hacer por ti hoy? 🤔
+* Responder preguntas relacionadas con la Constitución de 1991.
+* Proporcionarte artículos o secciones específicas de la Constitución.
+* Explicarte conceptos y principios fundamentales consagrados en el texto constitucional.
+* Brindarte orientación sobre derechos fundamentales y su aplicación.
+* Aclarar dudas sobre el funcionamiento de las instituciones y el Estado colombiano.
+
+**¡No dudes en preguntarme cualquier cosa relacionada con la Constitución Política de Colombia de 1991!**
+
+*Recuerda: Proporciono información basada en mi conocimiento actual y en la normativa vigente hasta octubre de 2023. Para asesoría legal o técnica específica, consulta a un abogado o experto en el tema.*
 """)
 
 # Inicialización de variables de estado de sesión
